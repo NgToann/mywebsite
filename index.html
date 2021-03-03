@@ -14,7 +14,7 @@
 <body>
 	<div id="results">Your captured image will appear here...</div>
 	
-	<h1>Facingmode: environment 1.0</h1>
+	<h1>Facingmode: environment 1.0 500x350</h1>
 	<h3>Demonstrates using the HTML5 user media constraints object using rear camera</h3>
 	
 	<div id="my_camera"></div>
@@ -24,15 +24,15 @@
 	<!-- Configure a few settings and attach camera -->
 	<script language="JavaScript">
 		Webcam.set({
-			width: 320,
-			height: 180,
+			width: 500,
+			height: 350,
 			image_format: 'jpeg',
 			jpeg_quality: 90,
 			constraints: {
-				width: 320, // { exact: 320 },
-				height: 180, // { exact: 180 },
+				width: 500, // { exact: 320 },
+				height: 350, // { exact: 180 },
 				facingMode: "environment",
-				frameRate: 30
+				frameRate: 40
 			}
 		});
 		Webcam.attach( '#my_camera' );
